@@ -1,0 +1,52 @@
+
+$main_font: 'Rubik';
+
+$accent: teal;
+
+$white: #FFFFFF;
+$black: #000000;
+
+$containerPadding: 15;
+
+$container: 1225 + ($containerPadding * 2);
+$containerMin: 1216 + ($containerPadding * 2);
+$containerLarge: 1216 + ($containerPadding * 2);
+
+:root {
+    --title-font: 'Rubik';
+    --main-font: 'Rubik';
+    
+    --accent: #A23834;
+    --accent-dark: #263238;
+
+    --gray: #777777;
+    --gray-light: #BFBFBF;
+    --gray-light-2: #E0E0E0;
+    --dark: #2C2C2C;
+    --light: #F9F9F9;
+
+    --aqua: #65CDD9;
+    --teal: #21737C;
+    --teal-0-6: rgba(33, 115, 124, 0.6);
+    --teal-dark: #145e66;
+
+    --white: #FFF;
+    --black: #000;
+
+    --container-padding: 15px;
+}
+
+
+
+@font-face {
+    @include font-include('Rubik', 400, swap, normal, 'Rubik-Regular');
+}
+
+@font-face {
+    @include font-include('Rubik', 500, swap, normal, 'Rubik-Medium');
+}
+
+@font-face {
+    @include font-include('Rubik', 700, swap, normal, 'Rubik-Bold');
+}
+

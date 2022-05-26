@@ -1,0 +1,118 @@
+.request {
+
+    // .request__container
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+
+    // .request__form
+
+    &__form {
+        flex: 1 1 100%;
+        @include _992 {
+            flex: 0 1 67%;
+            padding-right: 46px;
+            padding-bottom: 30px;
+        }
+        
+        padding-bottom: 72px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        // .request__form--title
+
+        &--title {
+            
+            @include _992 {
+                flex: 0 1 80%;
+                font-size: 1.875rem;
+                margin-bottom: 20px;
+            }
+
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.5rem;
+            line-height: 150%;
+            color: var(--dark);
+
+            margin-bottom: 10px;
+        }
+
+        // .request__form--label
+
+        &--label {
+            
+            flex: 1 1 100%;
+            padding: 11px 0;
+
+            @media(min-width: 650px) {
+                flex: 0 1 50%;
+                padding: 22px 11px;
+            }
+
+            @include _992 {
+                padding: 22px;
+            }
+        }
+
+        // .request__form--input
+
+        &--input {
+            font-weight: 400;
+            font-size: 1.375rem;
+            line-height: 150%;
+
+            padding: 12px 0;
+
+            width: 100%;
+
+            border-bottom: 1px solid var(--teal-0-6);
+            transition: border .2s ease-in-out;
+            &:focus {
+                border-bottom: 1px solid var(--teal);
+            }
+
+            &::placeholder {
+                color: var(--gray-light);
+            }
+        }
+
+        // .request__form--submit
+
+        &--submit {
+            margin-top: 20px;
+
+            max-width: 316px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    // .request__image
+
+    &__image {
+        flex: 1 1 100%;
+        text-align: center;
+        @include _992 {
+            flex: 0 1 33%;
+            text-align: right;
+        }
+        // .request__image--img
+
+        &--img {
+            max-width: 100%;
+            object-fit: contain;
+            object-position: bottom;
+
+            height: 300px;
+            @media(min-width: 650px) {
+                height: 422px;
+            }
+        }
+    }
+}
+
