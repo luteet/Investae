@@ -25,7 +25,8 @@
     "gulp-webp": "^4.0.0",
     "gulp-webp-html": "^1.0.2",
     "normalize.css": "^8.0.1",
-    "sass": "^1.45.0"
+    "sass": "^1.45.0",
+    "smoothscroll-polyfill": "^0.4.4"
   },
   "dependencies": {
     "esm": "^3.2.25"

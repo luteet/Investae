@@ -73,7 +73,7 @@ function scriptsLib() {
         //'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js', // Попап (jQuery)
         //'node_modules/wowjs/dist/wow.min.js', // Анимация
         //'node_modules/nouislider/dist/nouislider.min.js', // Кастомный input[range]
-        //'node_modules/smoothscroll-polyfill/dist/smoothscroll.min.js', // Полифил для window.scroll()
+        'node_modules/smoothscroll-polyfill/dist/smoothscroll.min.js', // Полифил для window.scroll()
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
@@ -218,7 +218,7 @@ exports.watching = watching;
 exports.browsersync = browsersync;
 exports.scripts = scripts;
 exports.scriptsMin = scriptsMin;
-//exports.scriptsLib = scriptsLib;
+exports.scriptsLib = scriptsLib;
 /* exports.images = images; */
 exports.cleanDist = cleanDist;
 exports.CSSlibBuild = CSSlibBuild;
@@ -232,4 +232,4 @@ exports.htmlCompilation = htmlCompilation;
 
 exports.fonts = series(ttf2woffConvert, ttf2woff2Convert, fonts);
 exports.webp = series(cleanWebp, webpConvert);
-exports.default = parallel(/* images , */CSSlibBuild, styles, browsersync, watching, /* scriptsLib, */ scriptsMin, scripts, htmlCompilation, json);
+exports.default = parallel(/* images , */CSSlibBuild, styles, browsersync, watching, scriptsLib, scriptsMin, scripts, htmlCompilation, json);

@@ -249,6 +249,15 @@
         }
     }
 
+    &__scroll-link {
+        color: var(--accent-dark);
+        
+        transition: color .2s ease-in-out;
+        &:hover {
+            color: var(--accent);
+        }
+    }
+
     // .card__logo
 
     &__logo {
