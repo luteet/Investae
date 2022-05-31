@@ -1338,6 +1338,34 @@ body._popup-active {
   margin-right: 8px;
 }
 
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px -10px;
+}
+
+.footer__row--social-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 5px 10px;
+  border-radius: 50%;
+  background: #E4E5E6;
+}
+
+.footer__row--social-link svg {
+  fill: var(--accent);
+}
+
 .footer__copy {
   text-align: center;
   padding: 33px 15px;

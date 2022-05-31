@@ -124,6 +124,29 @@
         }
     }
 
+    &__row {
+        display: flex;
+
+        margin: 5px -10px;
+        &--social-link {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 40px; height: 40px;
+
+            margin: 5px 10px;
+
+            border-radius: 50%;
+
+            background: #E4E5E6;
+
+            & svg {
+                fill: var(--accent);
+            }
+        }
+    }
+
     // .footer__contact
 
     &__contact {
