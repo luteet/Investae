@@ -1418,7 +1418,7 @@ body._popup-active {
 ._main-title {
   margin: 0;
   font-family: var(--title-font);
-  color: var(--accent-dark);
+  color: var(--dark);
   font-weight: 700;
   font-size: 2.125rem;
   line-height: 120%;
