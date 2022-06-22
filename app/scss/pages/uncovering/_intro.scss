@@ -93,6 +93,9 @@
             right: 0; top: 0;
             z-index: -1;
 
+            max-width: 100%;
+            object-fit: contain;
+
             @include _992 {
                 position: absolute;
                 transform: translate(11%,-8%);

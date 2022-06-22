@@ -1960,6 +1960,9 @@ body._popup-active {
   right: 0;
   top: 0;
   z-index: -1;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .uncovering-quote__block--body {
