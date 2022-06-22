@@ -1,6 +1,10 @@
 .footer {
     flex: 0 0 auto;
     background: var(--light);
+
+    &._footer-social-active {
+        padding-top: 50px;
+    }
     // .footer__container
 
     &__container {

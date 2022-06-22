@@ -1,0 +1,76 @@
+.access {
+
+    // .uncovering-access__container
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        flex-direction: column;
+        @include _992 {
+            flex-direction: row;
+        }
+    }
+
+    // .uncovering-access__info
+
+    &__info {
+        flex: 0 1 44%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        @include _992 {
+            display: block;
+            text-align: left;
+        }
+    }
+
+    // .uncovering-access__title
+
+    &__title {
+        line-height: 150%;
+    }
+
+    // .uncovering-access__text
+
+    &__text {
+        margin-top: 15px;
+        @include _992 {
+            margin-top: 30px;
+        }
+
+        font-size: 1.125rem;
+        line-height: 150%;
+        color: var(--gray);
+    }
+
+    // .uncovering-access__btn
+
+    &__btn {
+        margin-top: 30px;
+        @include _992 {
+            margin-top: 69px;
+        }
+    }
+
+    // .uncovering-access__image
+
+    &__image {
+        padding-top: 34px;
+        @include _992 {
+            padding-top: 0;
+        }
+        // .uncovering-access__image--img
+
+        &--img {
+            max-width: 100%;
+            object-fit: contain;
+        }
+    }
+}
+

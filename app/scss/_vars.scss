@@ -9,7 +9,7 @@ $black: #000000;
 $containerPadding: 15;
 
 $container: 1225 + ($containerPadding * 2);
-$containerMin: 1216 + ($containerPadding * 2);
+$containerMin: 540 + ($containerPadding * 2);
 $containerLarge: 1216 + ($containerPadding * 2);
 
 :root {
@@ -17,13 +17,16 @@ $containerLarge: 1216 + ($containerPadding * 2);
     --main-font: 'Rubik';
     
     --accent: #A23834;
+    --accent-dark-2: #871612;
     --accent-dark: #263238;
 
     --gray: #777777;
     --gray-light: #BFBFBF;
     --gray-light-2: #E0E0E0;
     --dark: #2C2C2C;
+    --dark-2: #263238;
     --light: #F9F9F9;
+    --light-2: #E5E5E5;
 
     --aqua: #65CDD9;
     --teal: #21737C;
@@ -43,10 +46,69 @@ $containerLarge: 1216 + ($containerPadding * 2);
 }
 
 @font-face {
+    @include font-include('Rubik', 400, swap, italic, 'Rubik-Italic');
+}
+
+@font-face {
     @include font-include('Rubik', 500, swap, normal, 'Rubik-Medium');
+}
+
+@font-face {
+    @include font-include('Rubik', 600, swap, normal, 'Rubik-SemiBold');
 }
 
 @font-face {
     @include font-include('Rubik', 700, swap, normal, 'Rubik-Bold');
 }
 
+@font-face {
+    @include font-include('Rubik', 700, swap, italic, 'Rubik-BoldItalic');
+}
+
+@font-face {
+    @include font-include('Roboto', 700, swap, normal, 'Roboto-Bold');
+}
+
+
+@font-face {
+    font-family: 'investae-icons';
+    src:
+      url('investae-icons.ttf?voyre6') format('truetype'),
+      url('investae-icons.woff?voyre6') format('woff'),
+      url('investae-icons.svg?voyre6#investae-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="_icon-"], [class*=" _icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'investae-icons' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  ._icon-check::before {
+    content: "\e900";
+  }
+  ._icon-email::before {
+    content: "\e901";
+  }
+  ._icon-linkedin::before {
+    content: "\e902";
+  }
+  ._icon-quote-end::before {
+    content: "\e903";
+  }
+  ._icon-quote-start::before {
+    content: "\e904";
+  }
+  

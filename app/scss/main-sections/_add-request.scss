@@ -1,0 +1,144 @@
+.add-request {
+    position: relative;
+    &._arrow-active {
+        padding-bottom: 100px;
+        @include _992 {
+            padding-bottom: 150px;
+        }
+    }
+    // .add-request__container
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+
+        @include _992 {
+            flex-direction: row;
+        }
+    }
+
+    // .add-request__form
+
+    &__form {
+        
+        @include _768 {
+            flex: 0 1 calc(100% - 458px);
+        }
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include _992 {
+            display: block;
+        }
+        // .add-request__form--title
+
+        &--title {
+            text-align: center;
+            @include _992 {
+                text-align: left;
+            }
+        }
+
+        // .add-request__form--row
+
+        &--row {
+            width: 100%;
+
+            padding-top: 35px;
+            @include _992 {
+                max-width: 70%;
+                min-width: 450px;
+
+                padding-top: 57px;
+            }
+
+            display: flex;
+            flex-wrap: wrap;
+
+            margin: -11px;
+
+            & > * {
+                flex: 1 1 100%;
+
+                @include _768 {
+                    flex: 0 1 50%;
+                }
+
+                padding: 11px;
+            }
+        }
+
+        // .add-request__form--label
+
+        &--label {
+        }
+
+        // .add-request__form--input
+
+        &--input {
+            width: 100%;
+        }
+
+        &--footer {
+            display: flex;
+            flex-wrap: wrap;
+
+            padding-top: 30px;
+
+            margin: -14px;
+
+            & > * {
+                margin: 14px;
+                flex: 1 1 100%;
+                @include _768 {
+                    flex: 0 1 auto;
+                }
+            }
+        }
+
+        // .add-request__form--submit
+
+        &--submit {
+            
+        }
+    }
+
+    // .add-request__image
+
+    &__image {
+        margin-top: 60px;
+
+        @include _992 {
+            margin-top: 0px;
+            margin-left: -3%;
+        }
+        // .add-request__image--img
+
+        &--img {
+            
+            @include _992 {
+                margin-left: -15%;
+            }
+
+            max-width: 100%;
+            object-fit: contain;
+
+            position: relative;
+            z-index: -1;
+        }
+    }
+
+    &__arrow {
+        position: absolute;
+        left: 30%; bottom: -6%;
+
+        @include _992 {
+            left: 45%; bottom: 0%;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.uncovering-quote {
+    
+    // .uncovering-quote__container
+
+    &__container {
+    }
+
+    // .uncovering-quote__block
+
+    &__block {
+
+        // .uncovering-quote__block--body
+
+        &--body {
+            max-width: 1008px;
+            margin: 0 auto;
+        }
+
+        // .uncovering-quote__block--text
+
+        &--text {
+            font-style: italic;
+            max-width: 846px;
+            margin: 0 auto;
+        }
+    }
+}
+

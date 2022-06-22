@@ -1,0 +1,137 @@
+.why {
+    position: relative;
+    // .why__bg
+
+    &__bg {
+        position: absolute;
+        left: 0; top: 0;
+        width: 100%; height: 100%;
+
+        z-index: -1;
+        // .why__bg--img
+
+        &--img {
+            position: absolute;
+            left: 0; bottom: 25%;
+            @include _768 {
+                bottom: 0;
+            }
+            width: 100%; height: auto;
+        }
+    }
+
+    // .why__container
+
+    &__container {
+        max-width: calc(1280px + (var(--container-padding) * 2));
+    }
+
+    // .why__title
+
+    &__title {
+    }
+
+    // .why__block
+
+    &__block {
+        padding-top: 45px;
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        @include _992 {
+            padding-top: 135px;
+            flex-direction: row;
+        }
+    }
+
+    // .why__image
+
+    &__image {
+        margin-top: 35px;
+        @include _992 {
+            margin-top: 0px;
+        }
+        // .why__image--img
+
+        &--img {
+            max-width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    // .why__list
+
+    &__list {
+        
+        @include _992 {
+            flex: 0 1 calc(100% - 494px);
+        }
+
+        margin: 0 -15px;
+        @media(min-width: 1200px) {
+            margin: 0 -30px;
+        }
+
+        display: grid;
+        grid-template-columns: 100%;
+        @include _768 {
+            grid-template-columns: 40% 60%;
+        }
+
+        counter-reset: why-item;
+    }
+
+    // .why__item
+
+    &__item {
+        &:nth-child(-n + 9) &--number::before {
+            content: "0"counter(why-item);
+        }
+
+        &._full {
+            @include _768 {
+                grid-column: 1/3;
+            }
+        }
+
+        padding: 15px;
+        @media(min-width: 1200px) {
+            padding: 15px 30px;
+        }
+        // .why__item--body
+
+        &--body {
+        }
+
+        // .why__item--number
+
+        &--number {
+            &::before {
+                counter-increment: why-item;
+                content: counter(why-item);
+                font-weight: 700;
+                font-size: 3.375rem;
+                line-height: 150%;
+                color: var(--accent);
+            }
+        }
+
+        // .why__item--text
+
+        &--text {
+            font-weight: 500;
+            font-size: 1.5rem;
+            line-height: 120%;
+            color: var(--dark);
+
+            & p {
+                padding: 5px 0;
+            }
+        }
+    }
+}
+

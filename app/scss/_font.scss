@@ -16,6 +16,10 @@
         font-size: 4rem;
     }
 
+    &._dark strong {
+        color: var(--dark);
+    }
+
     & strong {
         color: var(--accent);
         position: relative;
@@ -69,6 +73,19 @@
             border-bottom: 15px solid var(--aqua);
         }
     }
+
+    &._min {
+        font-size: 2.75rem;
+
+        @include _768 {
+            font-size: 2.75rem;
+        }
+    
+        @include _992 {
+            font-size: 2.75rem;
+        }
+
+    }
 }
 
 ._section-text {
@@ -86,6 +103,37 @@
     
     & p {
         padding: 7px 0;
+    }
+}
+
+._article-title {
+    font-weight: 700;
+    font-size: 2.125rem;
+    &._min {
+        font-size: 2rem;
+    }
+    line-height: 120%;
+    color: var(--dark);
+
+    &._light {
+        color: var(--white);
+    }
+
+    @include _768 {
+        font-size: 3rem;
+
+        &._min {
+            font-size: 2.25rem;
+        }
+    }
+
+    & strong {
+        position: relative;
+
+        border-bottom: 7px solid var(--aqua);
+        @include _768 {
+            border-bottom: 10px solid var(--aqua);
+        }
     }
 }
 

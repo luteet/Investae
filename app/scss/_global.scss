@@ -48,14 +48,23 @@ body {
 }
 
 ._section-padding {
-    padding: 75px 0px;
+    padding: 25px 0px;
+    &._large {
+        padding: 50px 0;
+    }
 
     @include _768 {
-        padding: 100px 0px;
+        padding: 30px 0px;
+        &._large {
+            padding: 60px 0;
+        }
     }
 
     @include _992 {
-        padding: 110px 0px;
+        padding: 51px 0px;
+        &._large {
+            padding: 100px 0;
+        }
     }
 
 }
@@ -130,21 +139,169 @@ body {
 ._btn {
     display: inline-block;
     
-    padding: 18px 30px;
+    padding: 20px 40px;
 
     background-color: var(--teal);
     color: var(--white);
 
+    font-family: 'Roboto';
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
+    @include _768 {
+        font-size: 1.25rem;
+    }
     line-height: 100%;
     letter-spacing: 0.03em;
 
     border-radius: 10em;
 
-    transition: background .2s ease-in-out;
+    transition: background .2s ease-in-out, border .2s ease-in-out, color .2s ease-in-out;
+
+    &._min {
+        padding: 13px 17px;
+
+        min-width: 148px;
+
+        border: 2px solid var(--teal);
+        
+        text-align: center;
+
+        font-family: 'Rubik';
+        font-size: 0.875rem;
+    }
+
+    &._transparent {
+        color: var(--teal);
+        background: transparent;
+        border: 2px solid var(--teal);
+    }
+
+    &._accent {
+        border-color: var(--accent);
+        background: var(--accent);
+
+        &._transparent {
+            background: transparent;
+            color: var(--accent);
+        }
+    }
 
     &:hover {
         background-color: var(--teal-dark);
+
+        &._accent:hover {
+            border-color: var(--accent-dark-2);
+            background: var(--accent-dark-2);
+        }
+
+        &._min {
+            border: 2px solid var(--teal-dark);
+        }
+
+        &._transparent {
+            color: var(--white);
+            border: 2px solid var(--teal-dark);
+        }
+    }
+}
+
+._quote-block {
+    &-body {
+        padding: 40px;
+
+        background: var(--white);
+        box-shadow: 0px 10px 40px rgba(119, 119, 119, 0.2);
+        border-radius: 10px;
+    }
+
+    &._min &-body {
+        padding: 20px 50px;
+    }
+
+    &._min &-text {
+
+        &::before {
+            top: 15px;
+        }
+
+        &::after {
+            bottom: 15px;
+        }
+
+        &::before, &::after {
+            font-size: 18px;
+            @include _768 {
+                font-size: 18px;
+            }
+        }
+    }
+
+    
+
+    &-text {
+        font-size: 1.25rem;
+        line-height: 180%;
+
+        color: var(--teal);
+
+        text-align: center;
+
+        position: relative;
+        padding: 30px 0px;
+
+        @include _768 {
+            padding: 10px 70px;
+        }
+
+        &::before, &::after {
+            position: absolute;
+
+            font-family: 'investae-icons' !important;
+            speak: never;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+
+            color: var(--aqua);
+            font-size: 20px;
+            @include _768 {
+                font-size: 30px;
+            }
+        }
+
+        &::before {
+            left: 0; top: 0;
+            content: '\e904';
+        }
+
+        &::after {
+            right: 0; bottom: 0;
+            content: '\e903';
+        }
+    }
+}
+
+._input {
+    font-weight: 400;
+    font-size: 1.375rem;
+    line-height: 150%;
+
+    padding: 12px 0;
+
+    width: 100%;
+
+    border-bottom: 1px solid var(--aqua);
+    transition: border .2s ease-in-out;
+    &:focus {
+        border-bottom: 1px solid var(--teal);
+    }
+
+    &::placeholder {
+        color: var(--gray);
     }
 }

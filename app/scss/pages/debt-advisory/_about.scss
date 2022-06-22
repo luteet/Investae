@@ -1,0 +1,95 @@
+.about-debt-advisory {
+
+    // .about-debt-advisory__container
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+
+        @include _992 {
+            flex-direction: row;
+        }
+    }
+
+    // .about-debt-advisory__info
+
+    &__info {
+        flex: 0 1 60%;
+    }
+
+    // .about-debt-advisory__main-title
+
+    &__main-title {
+    }
+
+    // .about-debt-advisory__text
+
+    &__text {
+        padding-top: 0px;
+
+        font-size: 1.125rem;
+        line-height: 150%;
+        color: var(--gray);
+    }
+
+    // .about-debt-advisory__list
+
+    &__list {
+        padding-top: 30px;
+
+        margin: -7px 0;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .about-debt-advisory__li
+
+    &__li {
+        padding: 7px 0;
+
+        display: flex;
+        align-items: center;
+
+        font-weight: 500;
+        font-size: 1.25rem;
+        color: var(--gray);
+
+        &::before {
+            content: "\e900";
+
+            font-family: 'investae-icons' !important;
+            speak: never;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+        
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+
+            font-size: 1.875rem;
+            color: var(--accent);
+
+            padding-right: 20px;
+        }
+    }
+
+    // .about-debt-advisory__image
+
+    &__image {
+
+        text-align: center;
+        padding-top: 60px;
+
+        @include _992 {
+            text-align: left;
+            padding-top: 0;
+        }
+        // .about-debt-advisory__image--img
+
+        &--img {
+        }
+    }
+}

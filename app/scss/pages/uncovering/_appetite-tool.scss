@@ -1,0 +1,64 @@
+.appetite-tool {
+
+    // .appetite-tool__body
+
+    &__body {
+        position: relative;
+    }
+
+    // .appetite-tool__bg
+
+    &__bg {
+        position: absolute;
+        left: 0; top: 0;
+        width: 100%; height: 100%;
+        z-index: -1;
+
+        // .appetite-tool__bg--img
+
+        &--img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    // .appetite-tool__container
+
+    &__container {
+        text-align: center;
+    }
+
+    // .appetite-tool__title
+
+    &__title {
+        & strong {
+            display: inline-block;
+        }
+        @include _768 {
+            & strong {
+                display: inline;
+            }
+        }
+    }
+
+    // .appetite-tool__text
+
+    &__text {
+        padding: 30px 20px;
+
+        font-size: 1.125rem;
+        line-height: 150%;
+
+        & p {
+            padding: 7px 0;
+        }
+        color: var(--white);
+    }
+
+    // .appetite-tool__btn
+
+    &__btn {
+        margin-bottom: 45px;
+    }
+}
+

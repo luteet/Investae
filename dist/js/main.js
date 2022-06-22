@@ -1,11 +1,23 @@
 
-const body = document.querySelector('body');
+const body = document.querySelector('body'),
+      menu = document.querySelectorAll('.header__burger, .header__nav, body'),
+      burger = document.querySelector('.header__burger');
 
 
 let thisTarget, removeActiveClassFromItem;
 body.addEventListener('click', function (event) {
 
     thisTarget = event.target;
+
+
+
+    if (thisTarget.closest('.header__burger')) {
+      menu.forEach(elem => {
+          elem.classList.toggle('_active')
+      })
+    }
+
+
     
     let cardScrollLink = thisTarget.closest('.card__scroll-link');
     if(cardScrollLink) {

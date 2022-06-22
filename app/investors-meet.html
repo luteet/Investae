@@ -1,0 +1,182 @@
+@@include("html/_header-v2.html")
+
+<div class="wrapper">
+    <section class="investors-meet-intro">
+        <div class="investors-meet-intro__bg">
+            <picture>
+                <source srcset="img/investors-meet/intro/bg.webp" type="image/webp">
+                <img src="img/investors-meet/intro/bg.png" alt="" width="0" height="0" loading="lazy" class="investors-meet-intro__bg--img">
+            </picture>
+        </div>
+        <div class="investors-meet-intro__container _container _txt-center">
+            <div class="investors-meet-intro__info">
+                <h1 class="investors-meet-intro__main-title _article-title _dark">
+                    Where investors meet yield
+                </h1>
+                <h2 class="investors-meet-intro__subtitle">
+                    What is a due diligence?
+                </h2>
+                <div class="investors-meet-intro__text">
+                    <p>
+                        A due diligence is an investigation, audit or review performed to confirm the facts of the investment opportunity under consideration. 
+                    </p>
+                </div>
+            </div>
+            <div class="investors-meet-intro__image">
+                <picture>
+                    <source srcset="img/investors-meet/intro/image.webp" width="628" height="378" media="(min-width: 992px)" type="image/webp">
+                    <source srcset="img/investors-meet/intro/image.webp" width="370" height="222" type="image/webp">
+                    <img src="img/investors-meet/intro/image.png" alt="" width="628" height="378" loading="lazy" class="investors-meet-intro__image--img">
+                </picture>
+            </div>
+        </div>
+    </section>
+    <section class="process _section-padding">
+        <div class="process__container _container">
+            <h2 class="process__title _article-title _txt-center">
+                Investae 
+                <strong>Due diligence process</strong>
+            </h2>
+            <ul class="process__list">
+                @@loop("html/process/_process-item.html", [
+                    {"number": '01', "line-type": 'start', "title": 'Initial screening', "text": 'The initial screening consists of identifying investment opportunities which are aligned with our investors’ expectations and preferences.'},
+                    {"number": '02', "line-type": 'simple', "title": 'Investment analysis', "text": 'This means comparing the yield with the market, assessing how this particular investment is better or worse than others and how worthy it is to invest in.'},
+                    {"number": '03', "line-type": 'simple', "title": 'Portfolio intelligence', "text": 'We will answer the question of how this investment opportunity can be a fit to investors’ portfolios and what it brings to investors’ asset allocations.'},
+                    {"number": '06', "line-type": 'simple',  "title": 'General analysis', "text": 'We will confirm basic facts, such as period of existence, organizational and legal forms, legal address, paid-up capital, and so on.'},
+                    {"number": '05', "line-type": 'simple', "title": 'External Credit rating', "text": 'Credit rating reliability is set by rating agencies, evaluating a variety of factors. When available, we will review the credit rating.'},
+                    {"number": '04', "line-type": 'round-right', "title": 'Risk mitigation policy', "text": 'We will assess how the investment opportunity is protecting investors’ interests. We will identify factors at risks and how the company is mitigating these risks, and we will assess different scenarios under which the investment may reach its objective.'},
+                    {"number": '07', "line-type": 'round-left', "title": 'Financial analysis', "text": 'We will review the financial analysis performed by auditors.'},
+                    {"number": '08', "title": 'Legal opinion', "text": 'Whenever necessary, we will request a legal opinion from a law firm. A law firm may, for example, examine the structure of the investment and issue a legal opinion that describes whether the transaction is legally structured, and which types of investors may purchase it.'},
+                    {"number": '09', "title": 'Meeting with ﬁrm management', "text": 'We will organize a face-to-face / online meeting with the firm‘s management.'},
+                    {"number": '10', "line-type": 'round-right _end', "title": 'Periodical monitoring', "text": 'We will constantly be monitoring the investment offer through news, reports and market ratios and return expectations. Whenever necessary, rebalancing may be suggested.'},
+                ])
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <article class="process__article process-article _image-large">
+            <div class="process-article__bg">
+                <picture>
+                    <source srcset="img/investors-meet/process/bg.webp" type="image/webp">
+                    <img src="img/investors-meet/process/bg.png" alt="" width="0" height="0" loading="lazy" class="process-article__bg--img">
+                </picture>
+            </div>
+            <div class="process-article__container _container">
+                <div class="process-article__info">
+                    <h3 class="process-article__title _article-title _min">
+                        How do we 
+                        <strong>select opportunities?</strong>
+                    </h3>
+                    <div class="process-article__text">
+                        <p>
+                            Investae attaches utmost importance to the realization of a due diligence. Our primary objective when performing a due diligence is to answer four basic questions:
+                        </p>
+                    </div>
+                </div>
+                <div class="process-article__image">
+                    <ul class="process-article__image-list">
+                        <li class="process-article__image-list--item">
+                            What are the expected investment return characteristics?
+                        </li>
+                        <li class="process-article__image-list--item">
+                            What is the investment risk profile?
+                        </li>
+                        <li class="process-article__image-list--item">
+                            Are the investment managers skilled at doing their job?
+                        </li>
+                        <li class="process-article__image-list--item">
+                            Do we believe the transaction is fair to both parties?
+                        </li>
+                    </ul>
+                    <picture>
+                        <source srcset="img/investors-meet/process/image-1.webp" width="524" height="524" media="(min-width: 992px)" type="image/webp">
+                        <source srcset="img/investors-meet/process/image-1.webp" width="330" height="330" type="image/webp">
+                        <img src="img/investors-meet/process/image-1.png" alt="" width="524" height="524" loading="lazy" class="process-article__image--img">
+                    </picture>
+                </div>
+            </div>
+        </article>
+        <article class="process__article process-article">
+            <div class="process-article__container _container">
+                <div class="process-article__info">
+                    <h3 class="process-article__title _article-title _min">
+                        We focus our work on SMEs based in Europe with a unique "savoir-faire”
+                    </h3>
+                    <div class="process-article__text">
+                        <p>
+                            We typically work with bond issuance between <br> <mark>10M</mark> and <mark>100M EUR/USD</mark>: Senior secured debts,<br> convertible bonds, convertible notes, loan notes.
+                        </p>
+                    </div>
+                </div>
+                <div class="process-article__image">
+                    <picture>
+                        <source srcset="img/investors-meet/process/image-2.webp" width="447" height="412" media="(min-width: 992px)" type="image/webp">
+                        <source srcset="img/investors-meet/process/image-2.webp" width="330" height="303" type="image/webp">
+                        <img src="img/investors-meet/process/image-2.png" alt="" width="447" height="412" loading="lazy" class="process-article__image--img">
+                    </picture>
+                </div>
+            </div>
+        </article>
+        <div class="process__quote">
+            <div class="process__quote--container _container">
+                <div class="process__quote--block _quote-block">
+                    <div class="process__quote--body _quote-block-body">
+                        <div class="process__quote--text _quote-block-text">
+                            <strong>Our mission is to bridge the gap between entrepreneurs looking to access the capital markets and investors.</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <article class="process__article process-article _rev">
+            <div class="process-article__container _container">
+                <div class="process-article__info">
+                    <div class="process-article__text">
+                        <p>
+                            We work with investor that are seeking to uncover hidden value creation opportunities. We work with over <strong>400+ investors</strong> among them: wealth management companies, family offices and High Net Worth Individuals that are seeking to uncover value in an era of inflation.
+                        </p>
+                    </div>
+                    <div class="process-article__quote _quote-block _min">
+                        <div class="process-article__quote--body _quote-block-body">
+                            <div class="process-article__quote--text _quote-block-text">
+                                <strong><mark>91%</mark> of institutional investors plan to maintain or increase their allocation to more private debt over the long term. <br>
+                                <div class="process-article__quote--author">
+                                    <span>Source: </span>Preqin
+                                </div>
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-article__image">
+                    <picture>
+                        <source srcset="img/investors-meet/process/image-3.webp" width="447" height="412" media="(min-width: 992px)" type="image/webp">
+                        <source srcset="img/investors-meet/process/image-3.webp" width="330" height="303" type="image/webp">
+                        <img src="img/investors-meet/process/image-3.png" alt="" width="447" height="412" loading="lazy" class="process-article__image--img">
+                    </picture>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section class="some-articles _section-padding">
+        <div class="some-articles__container _container">
+            <h2 class="some-articles__title _article-title _min _txt-center">
+                Some <strong>articles</strong> of interest to learn <br> more about the topic:
+            </h2>
+            <ul class="some-articles__list">
+                @@loop("html/some-articles/_some-articles-item.html", [
+                    {"logo": '1', "title": 'Private debt poised for further growth after resilience during pandemic', "text": 'After seeing its resilience tested as never before during two years of pandemic-related disruptions...'},
+                    {"logo": '2', "title": 'Private debt : the rise of an asset class (BNY Mellon)', "text": 'The growth of the private debt market has been nothing short of phenomenal over the last decade as it matches...'},
+                    {"logo": '3', "title": 'The stars align for private debt?', "text": 'Private debt funds have grown in popularity over the last decade and are well positioned to thrive in the curren...'},
+                    {"logo": '4', "title": 'The rise and rise of private debt', "text": 'Since the Global Financial Crisis (GFC), private debt has received increased attention and growth for a variety...'},
+                    {"logo": '5', "title": 'Investors Appear Poised to Continue Private Credit Allocations, Data Shows', "text": 'Since the Global Financial Crisis (GFC), private debt has received increased attention and growth for a variety...'},
+                ])
+            </ul>
+        </div>
+    </section>
+    @@include("html/_add-request.html", {
+        "footer-html": ''
+    })
+</div>
+
+@@include("html/_footer-v2.html")
