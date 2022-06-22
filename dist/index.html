@@ -11,8 +11,12 @@
     <div class="offset-check-js"></div>
     <header class="header">
         <div class="header__container _container">
-            <a href="#" class="header__logo">
-                <img src="img/logo.svg" alt="" width="150" class="header__logo--img">
+            <a href="uncovering.html" class="header__logo">
+                <picture>
+                    <source srcset="img/logo.webp" media="(min-width: 768px)" width="160" height="45" type="image/webp">
+                    <source srcset="img/logo.webp" width="132" height="37" type="image/webp">
+                    <img src="img/logo.png" alt="" width="160" height="45" loading="lazy" class="header__logo--img">
+                </picture>
             </a>
             <nav class="header__nav">
                 <div class="header__nav--body">
