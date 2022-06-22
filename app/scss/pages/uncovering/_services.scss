@@ -254,13 +254,13 @@
             grid-area: 1/1;
 
             text-align: center;
-            order: 3;
+            //order: 3;
 
             padding-top: 43px;
             @include _992 {
                 text-align: right;
                 padding-top: 0;
-                order: inherit;
+                //order: inherit;
             }
 
             &-text {
@@ -296,17 +296,26 @@
 
 
         &--quote {
-            order: 2;
+            
             padding-top: 50px;
             padding-bottom: 30px;
             @include _992 {
                 padding-top: 100px; padding-bottom: 0px;
-                order: inherit;
+                
             }
             
             &-body {
                 max-width: 1012px;
                 margin: 0 auto;
+
+                font-style: italic;
+
+                padding: 40px;
+
+                @include _992 {
+                    padding: 40px 150px;
+                    
+                }
             }
         }
     }

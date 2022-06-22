@@ -18,6 +18,27 @@ body.addEventListener('click', function (event) {
     }
 
 
+
+    let btnToScroll = thisTarget.closest('._btn-to-scroll');
+    if(btnToScroll) {
+      event.preventDefault();
+      let section;
+    
+      section = document.querySelector(btnToScroll.getAttribute('href'))
+    
+      menu.forEach(elem => {
+        elem.classList.remove('_active')
+      })
+    
+      window.scroll({
+        left: 0,
+        top: (section) ? section.offsetTop : 0,
+        behavior: 'smooth'
+      })
+    
+    }
+
+
     
     let cardScrollLink = thisTarget.closest('.card__scroll-link');
     if(cardScrollLink) {
@@ -49,3 +70,25 @@ body.addEventListener('click', function (event) {
     }
 
 })
+
+
+/* function activetoScoll() {
+  const scollElements = document.querySelectorAll('._active-to-scoll'),
+        offset = document.querySelector('.offset-check-js');
+
+
+} */
+
+
+
+
+// =-=-=-=-=-=-=-=-=-=-=-=- <Анимации> -=-=-=-=-=-=-=-=-=-=-=-=
+
+wow = new WOW({
+mobile:       false,
+})
+wow.init();
+
+// =-=-=-=-=-=-=-=-=-=-=-=- </Анимации> -=-=-=-=-=-=-=-=-=-=-=-=
+
+

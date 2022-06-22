@@ -239,6 +239,13 @@ body {
     
 
     &-text {
+        & a {
+            color: var(--teal);
+            transition: color .2s ease-in-out;
+            &:hover {
+                color: var(--teal-dark);
+            }
+        }
         font-size: 1.25rem;
         line-height: 180%;
 
