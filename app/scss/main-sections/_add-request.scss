@@ -138,9 +138,11 @@
         // .add-request__image--img
 
         &--img {
+            width: 100%; height: auto;
             
             @include _992 {
                 margin-left: -15%;
+                max-width: 100%;
             }
 
             max-width: 100%;

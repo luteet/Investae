@@ -91,13 +91,16 @@
         &--img {
             position: relative;
             right: 0; top: 0;
+            width: 100%; height: auto;
             z-index: -1;
 
-            max-width: 100%;
+            max-width: 550px;
             object-fit: contain;
 
             @include _992 {
+                max-width: 100%;
                 position: absolute;
+                width: 100%;
                 transform: translate(11%,-8%);
             }
         }

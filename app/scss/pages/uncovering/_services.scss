@@ -40,7 +40,14 @@
 
         &._rev &--img {
             @include _992 {
+                max-width: 100%;
                 transform: translate(0%,0);
+            }
+        }
+        
+        &._info-large &--img {
+            @include _992 {
+                max-width: 50%;
             }
         }
 
@@ -125,7 +132,6 @@
         // .uncovering-services__article--title
 
         &--title {
-            line-height: 150%;
         }
 
         // .uncovering-services__article--text
@@ -282,12 +288,13 @@
         // .uncovering-services__article--img
 
         &--img {
-            
+            height: auto; width: 100%;
             @include _992 {
+                max-width: 55%;
                 transform: translate(8%,0);
             }
 
-            max-width: 100%;
+            max-width: 550px;
             object-fit: contain;
 
             position: relative;

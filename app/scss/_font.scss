@@ -111,8 +111,9 @@
     font-size: 2.125rem;
     &._min {
         font-size: 2rem;
+        line-height: 140%;
     }
-    line-height: 120%;
+    line-height: 130%;
     color: var(--dark);
 
     &._light {

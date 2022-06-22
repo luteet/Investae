@@ -12,6 +12,10 @@
         display: flex;
         align-items: flex-end;
 
+        & > * {
+            width: 100%;
+        }
+
         &--img {
             width: 100%; height: auto;
         }
@@ -125,10 +129,13 @@
     // .private-intro__image
 
     &__image {
+        display: block;
         margin-top: 55px;
         // .private-intro__image--img
 
         &--img {
+            width: 100%; height: auto;
+            max-width: 1017px;
             max-width: 100%;
             object-fit: contain;
         }

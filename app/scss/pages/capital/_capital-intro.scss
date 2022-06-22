@@ -10,18 +10,20 @@
 
         flex-direction: column;
 
-        padding-top: 75px;
+        padding-top: 75px; padding-bottom: 50px;
 
         @include _992 {
             align-items: flex-end;
             flex-direction: row;
+
+            padding-bottom: 100px;
         }
     }
 
     // .capital-intro__info
 
     &__info {
-        flex: 0 1 calc(100% - 557px);
+        flex: 0 1 50%;
 
         display: flex;
         flex-direction: column;
@@ -60,6 +62,7 @@
 
     &__image {
         margin-top: 30px;
+        flex: 0 1 45%;
         
         @include _992 {
             margin-top: 0;
@@ -67,6 +70,7 @@
         // .capital-intro__image--img
 
         &--img {
+            width: 100%; height: auto;
             max-width: 100%;
             object-fit: contain;
             @include _992 {
